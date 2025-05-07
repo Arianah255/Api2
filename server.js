@@ -6,6 +6,7 @@ import taskRoutes from "./routes/taskRoutes.js";
 
 // Load environment variables
 dotenv.config();
+console.log("MONGO URI:", process.env.MONGODB_URI); // <--- Línea de depuración
 
 const app = express();
 const PORT = process.env.PORT || 5000;
